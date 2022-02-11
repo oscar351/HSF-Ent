@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>뽀로로 정권 : VIDEO</title>
+
+<link rel="stylesheet" href="video.css">
+<link rel="stylesheet" href="YouTubePopUp.css">
+<script src="jquery-1.12.1.min.js"></script>
+<script src="YouTubePopUp.jquery.js"></script>
+<script>
+jQuery(function(){
+  jQuery("a.bla-1").YouTubePopUp({autoplay: 1 });
+  jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } );
+});
+</script>
+</head>
+<body>
+    <div class="wrap">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="Po_Profile.html">PROFILE</a>
+          <a href="Po_video.html">VIDEO</a>
+          <a href="Po_Gallery.html">GALLERY</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+    </div>
+    <div class="container">
+        <br><br>
+        <div class="title">VIDEO</div>
+        <br><br><br><br><br><br><br>
+        <form>
+        <div class="yt">
+        <p>
+          <li>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=E0W5sJZ2d64"><img src="image/뽀로로노래.PNG" width="400" height="225" alt="노는게 제일 좋아"></a>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=fKEsNnjERS0"><img src="image/뽀로로노래1.PNG" width="400" height="225" alt="개구리"></a>   
+          <a class="bla-1" href="https://www.youtube.com/watch?v=xl18J8P8n80"><img src="image/뽀로로노래2.PNG" width="400" height="225" alt="숫자놀이"></a>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=oRPASa_EZYI"><img src="image/뽀로로노래3.PNG" width="400" height="225" alt="착한 어린이"></a>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=Ky6K0bRswFk"><img src="image/뽀로로노래4.PNG" width="400" height="225" alt="예쁜 아기곰"></a>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=JHQmR475Vjo"><img src="image/뽀로로노래5.PNG" width="400" height="225" alt="괜찮아요"></a>
+          </li>
+        </p>
+      </form>
+        </div>
+    </div>
+</body>
+</html>

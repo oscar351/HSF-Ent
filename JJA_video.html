@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>짱구 : VIDEO</title>
+
+<link rel="stylesheet" href="video.css">
+<link rel="stylesheet" href="YouTubePopUp.css">
+<script src="jquery-1.12.1.min.js"></script>
+<script src="YouTubePopUp.jquery.js"></script>
+<script>
+jQuery(function(){
+  jQuery("a.bla-1").YouTubePopUp({autoplay: 1 });
+  jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } );
+});
+</script>
+</head>
+<body>
+    <div class="wrap">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="JJA_Profile.html">PROFILE</a>
+          <a href="JJA_video.html">VIDEO</a>
+          <a href="JJA_Gallery.html">GALLERY</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+    </div>
+    <div class="container">
+        <br><br>
+        <div class="title">VIDEO</div>
+        <br><br><br><br><br><br><br>
+        <form>
+        <div class="yt">
+        <p>
+          <li>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=XHMdIA6bEOE"><img src="image/짱구노래1.PNG" width="400" height="225" alt="데뷔곡"></a>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=KmNM-kK4Dok"><img src="image/짱구노래2.PNG" width="400" height="225" alt="볶음국수"></a>   
+          <a class="bla-1" href="https://www.youtube.com/watch?v=U5DXYxEYGlg"><img src="image/짱구노래3.PNG" width="400" height="225" alt="부리부리댄스"></a>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=Luhsp-St9Lo"><img src="image/짱구노래4.PNG" width="400" height="225" alt="엉덩일 흔들어봐"></a>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=r7tlJv71QiQ"><img src="image/짱구노래5.PNG" width="400" height="225" alt="아뵤!"></a>
+          </li>
+        </p>
+      </form>
+        </div>
+    </div>
+</body>
+</html>

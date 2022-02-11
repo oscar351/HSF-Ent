@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>악질뮤지션 : PROFILE</title>
+
+<link rel="stylesheet" href="Do_Profile.css">
+<script>
+  function showTab(val) {
+    var obj1 = document.getElementById("1");
+    var obj2 = document.getElementById("2");
+    var obj3 = document.getElementById("3");
+    var obj4 = document.getElementById("4");
+    var obj5 = document.getElementById("5");
+  
+    obj1.style.display="none";
+    obj2.style.display="none";
+    obj3.style.display="none";
+    obj4.style.display="none";
+    obj5.style.display="none";
+
+    var obj = document.getElementById(val);
+    obj.style.display = "block";
+  }
+</script>
+</head>
+<body>
+    <div class="wrap">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="Do_Profile.html">PROFILE</a>
+          <a href="Do_video.html">VIDEO</a>
+          <a href="Do_Gallery.html">GALLERY</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+    </div>
+    <div class="container">
+      <div class="profile">
+        <div class="member_name">
+          <p> <a onclick="showTab('1')">둘리</a></p>
+          <p> <a onclick="showTab('2')">또치</a></p>
+          <p> <a onclick="showTab('3')">도우너</a></p>
+          <p> <a onclick="showTab('4')">마이콜</a></p>
+          <p> <a onclick="showTab('5')">희동이</a></p>
+        </ul>
+        </div>
+        <div class="pf_inner" id="1">
+          <div class="profile_img">
+            <div class="color_bg"></div>
+            <div class="member_img">
+              <img alt="둘리" width="455" height="580" src="image/둘리독사진.png">
+            </div>
+          </div>
+          <div class="profile_txt">
+            <div class="member_txt">둘리(리더)</div>
+            <div>
+              이름 : 둘리<br>출생 : 곤드와나(남극)
+            </div>
+          </div>
+        </div>
+        <div class="pf_inner" id="2" style="display: none;">
+          <div class="profile_img">
+            <div class="color_bg"></div>
+            <div class="member_img">
+              <img alt="또치" width="455" height="580" src="image/또치.png">
+            </div>
+          </div>
+          <div class="profile_txt">
+            <div class="member_txt">또치</div>
+            <div>
+              이름 : 또치<br>출생 : 아프리카
+            </div>
+          </div>
+        </div>
+        <div class="pf_inner" id="3" style="display: none;">
+          <div class="profile_img">
+            <div class="color_bg"></div>
+            <div class="member_img">
+              <img alt="도우너" width="455" height="580" src="image/도우너.png">
+            </div>
+          </div>
+          <div class="profile_txt">
+            <div class="member_txt">도우너</div>
+            <div>
+              이름 : 희동이<br>출생 : 깐따삐야 별
+            </div>
+          </div>
+        </div>
+        <div class="pf_inner" id="4" style="display: none;">
+          <div class="profile_img">
+            <div class="color_bg"></div>
+            <div class="member_img">
+              <img alt="마이콜" width="455" height="580" src="image/마이콜.png">
+            </div>
+          </div>
+          <div class="profile_txt">
+            <div class="member_txt">마이콜</div>
+            <div>
+              이름 : 마이콜<br>출생 : 대한민국
+            </div>
+          </div>
+        </div>
+        <div class="pf_inner" id="5" style="display: none;">
+          <div class="profile_img">
+            <div class="color_bg"></div>
+            <div class="member_img">
+              <img alt="희동이" width="455" height="580" src="image/희동이.png">
+            </div>
+          </div>
+          <div class="profile_txt">
+            <div class="member_txt">희동이</div>
+            <div>
+              이름 : 희동이<br>출생 : 서울특별시 도봉구 쌍문동
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

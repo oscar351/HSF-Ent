@@ -1,0 +1,39 @@
+section {height:700px;}
+
+#cart {
+  width: 100%;
+  background-color:#AAAAAA;
+  margin-left:190px;
+  margin-top:10px;
+}
+
+table.basic { 
+  width:100%; 
+  line-height:21px; 
+  border-top: 1px solid #979997; 
+  border-left: 1px solid #979997; 
+  border-collapse: collapse; 
+} 
+
+table.basic th, table.basic td { 
+  color:#678197; 
+  text-align:center; 
+  border-right: 1px solid #979997; 
+  border-bottom: 1px solid #979997; 
+  font-size: large;
+  text-align:center; 	
+  padding: 25px 100px 5px 0px;
+} 
+
+table.basic th { 
+  background-color: #eeeeee; 
+} 
+
+table.basic tr {
+  background-color:#FFF;
+}
+
+table.basic tr:nth-child(odd) {
+  background-color:#D7D7D7;
+}
+

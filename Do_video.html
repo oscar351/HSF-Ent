@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>악질뮤지션 : VIDEO</title>
+
+<link rel="stylesheet" href="video.css">
+<link rel="stylesheet" href="YouTubePopUp.css">
+<script src="jquery-1.12.1.min.js"></script>
+<script src="YouTubePopUp.jquery.js"></script>
+<script>
+jQuery(function(){
+  jQuery("a.bla-1").YouTubePopUp({autoplay: 1 });
+  jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } );
+});
+</script>
+</head>
+<body>
+    <div class="wrap">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="Do_Profile.html">PROFILE</a>
+          <a href="Do_video.html">VIDEO</a>
+          <a href="Do_Gallery.html">GALLERY</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+    </div>
+    <div class="container">
+        <br><br>
+        <div class="title">VIDEO</div>
+        <br><br><br><br><br><br><br>
+        <form>
+        <div class="yt">
+        <p>
+          <li>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=X3tC8izGz0I"><img src="image/아기공룡둘리오프닝.PNG" width="400" height="225" alt="데뷔곡"></a>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=n1Qxem9wjFM"><img src="image/아기공룡둘리 라면송.PNG" width="400" height="225" alt="라면과구공탄"></a>   
+          <a class="bla-1" href="https://www.youtube.com/watch?v=Im4FwJ6-lBY"><img src="image/아기공룡둘리 양치송.PNG" width="400" height="225" alt="양치"></a>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=LT2aBEuA-_o"><img src="image/아기공룡둘리 또치송.PNG" width="400" height="225" alt="또치 솔로곡"></a>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=2ELJBtgG0_k"><img src="image/마이콜등장.PNG" width="400" height="225" alt="마이콜 솔로곡"></a>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=jzOqWVz-Rfc"><img src="image/둘리요리.PNG" width="400" height="225" alt="비눗방울 리믹스"></a>
+          </li>
+        </p>
+      </form>
+        </div>
+    </div>
+</body>
+</html>

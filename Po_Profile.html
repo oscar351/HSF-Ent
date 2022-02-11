@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>뽀로로 정권 : PROFILE</title>
+
+<link rel="stylesheet" href="Do_Profile.css">
+<script>
+  function showTab(val) {
+    var obj1 = document.getElementById("1");
+    var obj2 = document.getElementById("2");
+    var obj3 = document.getElementById("3");
+    var obj4 = document.getElementById("4");
+    var obj5 = document.getElementById("5");
+  
+    obj1.style.display="none";
+    obj2.style.display="none";
+    obj3.style.display="none";
+    obj4.style.display="none";
+    obj5.style.display="none";
+
+    var obj = document.getElementById(val);
+    obj.style.display = "block";
+  }
+</script>
+</head>
+<body>
+    <div class="wrap">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="Po_Profile.html">PROFILE</a>
+          <a href="Po_video.html">VIDEO</a>
+          <a href="Po_Gallery.html">GALLERY</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+    </div>
+    <div class="container">
+      <div class="profile">
+        <div class="member_name">
+          <p> <a onclick="showTab('1')">뽀로로</a></p>
+          <p> <a onclick="showTab('2')">크롱</a></p>
+          <p> <a onclick="showTab('3')">루피</a></p>
+          <p> <a onclick="showTab('4')">에디</a></p>
+          <p> <a onclick="showTab('5')">포비</a></p>
+        </ul>
+        </div>
+        <div class="pf_inner" id="1">
+          <div class="profile_img">
+            <div class="color_bg"></div>
+            <div class="member_img">
+              <img alt="뽀로로" width="455" height="580" src="image/뽀로로독사진.jpg">
+            </div>
+          </div>
+          <div class="profile_txt">
+            <div class="member_txt">뽀로로(리더)</div>
+            <div>
+              출생 : 2003년 11월 27일<br>키 : 184cm<br>몸무게 : 85kg<br>별명 : 뽀통령
+            </div>
+          </div>
+        </div>
+        <div class="pf_inner" id="2" style="display: none;">
+          <div class="profile_img">
+            <div class="color_bg"></div>
+            <div class="member_img">
+              <img alt="크롱" width="455" height="580" src="image/크롱.jpg">
+            </div>
+          </div>
+          <div class="profile_txt">
+            <div class="member_txt">크롱</div>
+            <div>
+                출생 : 2003년 11월 27일<br>본관 : 분당 크씨
+            </div>
+          </div>
+        </div>
+        <div class="pf_inner" id="3" style="display: none;">
+          <div class="profile_img">
+            <div class="color_bg"></div>
+            <div class="member_img">
+              <img alt="루피" width="455" height="580" src="image/루피.jpg">
+            </div>
+          </div>
+          <div class="profile_txt">
+            <div class="member_txt">루피</div>
+            <div>
+                출생 : 2003년 11월 27일<br>별명 : 요리공주
+            </div>
+          </div>
+        </div>
+        <div class="pf_inner" id="4" style="display: none;">
+          <div class="profile_img">
+            <div class="color_bg"></div>
+            <div class="member_img">
+              <img alt="에디" width="455" height="580" src="image/에디.jpg">
+            </div>
+          </div>
+          <div class="profile_txt">
+            <div class="member_txt">에디</div>
+            <div>
+                출생 : 2003년 11월 27일<br>별명 : 과학자
+            </div>
+          </div>
+        </div>
+        <div class="pf_inner" id="5" style="display: none;">
+          <div class="profile_img">
+            <div class="color_bg"></div>
+            <div class="member_img">
+              <img alt="포비" width="455" height="580" src="image/포비.jpg">
+            </div>
+          </div>
+          <div class="profile_txt">
+            <div class="member_txt">희동이</div>
+            <div>
+                출생 : 2003년 11월 27일<br>취미 : 유튜브
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

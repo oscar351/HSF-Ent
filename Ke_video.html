@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>케로로 소대 : VIDEO</title>
+
+<link rel="stylesheet" href="video.css">
+<link rel="stylesheet" href="YouTubePopUp.css">
+<script src="jquery-1.12.1.min.js"></script>
+<script src="YouTubePopUp.jquery.js"></script>
+<script>
+jQuery(function(){
+  jQuery("a.bla-1").YouTubePopUp({autoplay: 1 });
+  jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } );
+});
+</script>
+</head>
+<body>
+    <div class="wrap">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="Ke_Profile.html">PROFILE</a>
+          <a href="Ke_video.html">VIDEO</a>
+          <a href="Ke_Gallery.html">GALLERY</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+    </div>
+    <div class="container">
+        <br><br>
+        <div class="title">VIDEO</div>
+        <br><br><br><br><br><br><br>
+        <form>
+        <div class="yt">
+        <p>
+          <li>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=lKOAWA7St2Y"><img src="image/케로로노래1.PNG" width="400" height="225" alt="소대 행진"></a>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=B7spSwga7M8"><img src="image/케로로노래2.png" width="400" height="225" alt="위풍당당"></a>   
+          <a class="bla-1" href="https://www.youtube.com/watch?v=S5gnBYkgD9I"><img src="image/케로로노래3.jpg.png" width="400" height="225" alt="아싸아싸(기로로)"></a>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=Aaivu7N8NeA"><img src="image/케로로노래4.jpg.png" width="400" height="225" alt="효도손이나 효도르나"></a>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=K-8o80cH__I"><img src="image/케로로노래5.jpg.png" width="400" height="225" alt="치고받고"></a>
+          <a class="bla-1" href="https://www.youtube.com/watch?v=cq2hjzM2Snc"><img src="image/케로로노래6.jpg.png" width="400" height="225" alt="케로로 소대 시대"></a>
+          </li>
+        </p>
+      </form>
+        </div>
+    </div>
+</body>
+</html>

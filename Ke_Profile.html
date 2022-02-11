@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>케로로 소대 : PROFILE</title>
+
+<link rel="stylesheet" href="Ke_Profile.css">
+<script>
+  function showTab(val) {
+    var obj1 = document.getElementById("1");
+    var obj2 = document.getElementById("2");
+    var obj3 = document.getElementById("3");
+    var obj4 = document.getElementById("4");
+    var obj5 = document.getElementById("5");
+  
+    obj1.style.display="none";
+    obj2.style.display="none";
+    obj3.style.display="none";
+    obj4.style.display="none";
+    obj5.style.display="none";
+
+    var obj = document.getElementById(val);
+    obj.style.display = "block";
+  }
+</script>
+</head>
+<body>
+    <div class="wrap">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="Ke_Profile.html">PROFILE</a>
+          <a href="Ke_video.html">VIDEO</a>
+          <a href="Ke_Gallery.html">GALLERY</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+    </div>
+    <div class="container">
+      <div class="profile">
+        <div class="member_name">
+          <p> <a onclick="showTab('1')">케로로</a></p>
+          <p> <a onclick="showTab('2')">타마마</a></p>
+          <p> <a onclick="showTab('3')">기로로</a></p>
+          <p> <a onclick="showTab('4')">쿠루루</a></p>
+          <p> <a onclick="showTab('5')">도로로</a></p>
+        </ul>
+        </div>
+        <div class="pf_inner" id="1">
+          <div class="profile_img">
+            <div class="color_bg"></div>
+            <div class="member_img">
+              <img alt="케로로" width="455" height="580" src="image/케로로독사진.jpg">
+            </div>
+          </div>
+          <div class="profile_txt">
+            <div class="member_txt">케로로(리더)</div>
+            <div>
+              계급 : 중사<br>소속 : 소대장<br>나이 : 10500살 이상
+            </div>
+          </div>
+        </div>
+        <div class="pf_inner" id="2" style="display: none;">
+          <div class="profile_img">
+            <div class="color_bg"></div>
+            <div class="member_img">
+              <img alt="타마마" width="455" height="580" src="image/타마마.png">
+            </div>
+          </div>
+          <div class="profile_txt">
+            <div class="member_txt">타마마</div>
+            <div>
+              계급 : 이등병<br>소속 : 지원병<br>나이 : 3000살 이상
+            </div>
+          </div>
+        </div>
+        <div class="pf_inner" id="3" style="display: none;">
+          <div class="profile_img">
+            <div class="color_bg"></div>
+            <div class="member_img">
+              <img alt="기로로" width="455" height="580" src="image/기로로.png">
+            </div>
+          </div>
+          <div class="profile_txt">
+            <div class="member_txt">기로로</div>
+            <div>
+                계급 : 하사<br>소속 : 기동보병<br>나이 : 10500살 이상
+            </div>
+          </div>
+        </div>
+        <div class="pf_inner" id="4" style="display: none;">
+          <div class="profile_img">
+            <div class="color_bg"></div>
+            <div class="member_img">
+              <img alt="쿠루루" width="455" height="580" src="image/쿠루루.png">
+            </div>
+          </div>
+          <div class="profile_txt">
+            <div class="member_txt">쿠루루</div>
+            <div>
+                계급 : 상사<br>소속 : 작전통신담당자<br>나이 : 6000살 이상
+            </div>
+          </div>
+        </div>
+        <div class="pf_inner" id="5" style="display: none;">
+          <div class="profile_img">
+            <div class="color_bg"></div>
+            <div class="member_img">
+              <img alt="도로로" width="455" height="580" src="image/도로로.jpg">
+            </div>
+          </div>
+          <div class="profile_txt">
+            <div class="member_txt">도로로</div>
+            <div>
+                계급 : 병장<br>소속 : 암살병<br>나이 : 10500살 이상
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

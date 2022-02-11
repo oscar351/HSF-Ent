@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>짱구 : PROFILE</title>
+<link rel="stylesheet" href="JJA_Profile.css">
+</head>
+<body>
+<div class="wrap">
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="JJA_Profile.html">PROFILE</a>
+			<a href="JJA_video.html">VIDEO</a>
+			<a href="JJA_Gallery.html">GALLERY</a>
+		</div>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+	<script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+</div>
+<div class="container">
+	<div class="profile">
+		<div class="member_name">
+			<p>
+				<a onclick="showTab('1')">짱구</a>
+			</p>
+		</ul>
+	</div>
+	<div class="pf_inner" id="1">
+		<div class="profile_img">
+			<div class="color_bg">
+			</div>
+			<div class="member_img">
+				<img alt="짱구" width="455" height="580" src="image/짱구프로필.png">
+			</div>
+		</div>
+		<div class="profile_txt">
+			<div class="member_txt">
+				짱구
+			</div>
+			<div>
+				 이름 : 신짱구<br>
+				출생 : 떡잎마을<br>
+				신장 : 105.9cm<br>
+				체중 : 22.8kg
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>짱구</title>
+
+<link rel="stylesheet" href="jjangu.css">
+</head>
+<body>
+    <div class="wrap">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="JJA_Profile.html">PROFILE</a>
+          <a href="JJA_video.html">VIDEO</a>
+          <a href="JJA_Gallery.html">GALLERY</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      <div class="container">
+        <div class="main-bg"></div>
+        <div class="right_cont">
+          <div class="write">
+            <h1>
+              <br><br><br><br><br>
+              <span><p>오늘은 무슨</p></span>
+              <span><p>장난을 꾸밀까</p></span>
+              <span><p>짱구는 못말려</p></span>
+              <br><br><br><br><br><br>
+              </h1>
+          </div>
+
+        </div>
+      </div>
+
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+    </div>      
+</body>
+</html>

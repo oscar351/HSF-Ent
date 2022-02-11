@@ -1,0 +1,126 @@
+.body {
+	margin:0 auto;
+	text-decoration:none;
+}
+.frame {
+	width:1100px;
+	margin:0 auto;
+}
+.header {
+	margin-bottom:150px;
+}
+.login {
+	float:right;
+	position:absolute;
+	right:3000px
+}
+.logo {
+	text-align:center;
+	margin-bottom:30px;
+}
+.container {
+	overflow:auto;
+}
+.menu {
+	position:fixed;
+	float:left;
+	width:180px;
+}
+.menu-list {
+	list-style:none;
+	margin:10px;
+	padding-left:0px;
+}
+.menu-item {
+	margin:0;
+}
+.content {
+	position:relative;
+	left:180px;
+	float:left;
+	width:700px;
+	margin:0 auto;
+	margin-left:100px;
+	padding-bottom:280px;
+}
+.icon {
+	text-decoration:none;
+}
+.icon-img {
+	width:150px;
+	height:150px;
+	margin-left:50px;
+	margin-bottom:50px;
+}
+.footer {
+	width:1100px;
+	height:80px;
+	position:absolute;
+	text-align:center;
+	margin:20px 20px 0;
+	font-size:12px;
+}
+ul {
+	list-style:none;
+	margin:0px;
+	padding:10px;
+	position:relative;
+}
+ul ul {
+	display:none;
+	position:relative;
+	margin:0 auto;
+	margin-top:-10px;
+}
+ul li:hover>ul {
+	display:block;
+	transition:height .6s;
+}
+a:link { color: black; text-decoration: none;}
+a:visited { color: black; text-decoration: none;}
+a:hover { color: black; text-decoration: none;}
+
+#boardcss_list_add_button_table {
+	width:100%;
+	margin:0 auto 15px;
+}
+#boardcss_list_add_button_table .add_button {
+	cursor:pointer;
+	border:1px solid #bebebe;
+	position:absolute;
+	right:10px;
+	top:10px;
+	width:85px;
+	padding:6px 0 6px;
+	text-align:center;
+	font-weight:bold;
+}
+#boardcss_list_add_button_table .add_button a {
+	color:#ffffff;
+}
+#boardcss_list_add_button_table .boardcss_list_add_button ul {
+	width:100%;
+	overflow:hidden;
+	height:10px;
+}
+.boardcss_list_table {
+	width:100%;
+}
+.list_table {
+	width:100%;
+}
+.list_table caption {
+	display:none;
+}
+.list_table thead th {
+	text-align:center;
+	border-top:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+	padding:8px 0;
+	background:#faf9fa;
+}
+.list_table tbody td {
+	text-align:center;
+	border-bottom:1px solid #e5e5e5;
+	padding: 5px 0;
+}
